@@ -1,0 +1,70 @@
+#main {
+    background-image: url("coin.jpg");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+@keyframes spin {
+    0% {
+        background: url("head.png")
+    }
+    25% {
+        background: url("tail.png")
+    }
+    50% {
+        background: url("head.png")
+    }
+    75% {
+        background: url("tail.png")
+    }
+    100% {
+        background: url("head.png")
+    }
+}
+
+#image {
+    background: url("head.png");
+    width: 220px;
+    height: 330px;
+    border-radius: 200px;
+}
+
+.animate {
+    background: url("head.png");
+    border-radius: 100px;
+    width: 220px;
+    height: 330px;
+    animation-name: spin;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+}
+
+.canvas {
+    width: 660px;
+    height: 68 0px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-color: orange;
+    color: red;
+}
+
+#center {
+    width: 220px;
+    margin: 15px auto;
+}
+
+.selection,
+#player,
+#computer {
+    display: inline;
+    margin: 25px;
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 1.2em;
+    border-radius: 5px;
+}
